@@ -1,0 +1,5 @@
+streams: 40
+window: 512
+threshold: 0.05
+estimator: p2
+repeats: 10

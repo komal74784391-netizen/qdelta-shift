@@ -1,0 +1,31 @@
+{
+  "project": "qdelta-shift",
+  "manifest_version": "1",
+  "tools": [
+    {
+      "name": "qdelta-monitor",
+      "description": "Run the streaming drift monitor over a score stream.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "stream_id": {
+            "type": "string",
+            "description": "Identifier of the score stream."
+          },
+          "window": {
+            "type": "integer",
+            "description": "Window length in observations."
+          },
+          "threshold": {
+            "type": "number",
+            "description": "Alarm threshold for quantile drift."
+          }
+        },
+        "required": [
+          "stream_id",
+          "window"
+        ]
+      }
+    }
+  ]
+}
